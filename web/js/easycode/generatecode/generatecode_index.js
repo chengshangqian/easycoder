@@ -60,25 +60,25 @@ $(function(){
 	
 	if(testing){
 		if(!projectName){
-			projectName = 'erp';
+			projectName = 'projectname';
 		}
 		if(!packageName){
-			packageName = 'com.gzdec.erp';
+			packageName = 'com.yourcompany.projectname';
 		}
 		if(!moduleName){
-			moduleName = 'user';
+			moduleName = 'modulename';
 		}
 		if(!driver){
 			driver = 'oracle.jdbc.OracleDriver';
 		}
 		if(!url){
-			url = 'jdbc:oracle:thin:@172.16.172.180:1521:develop';
+			url = 'jdbc:oracle:thin:@127.0.0.1:1521:dev';
 		}
 		if(!username){
-			username = 'study_online';
+			username = 'scott';
 		}
 		if(!password){
-			password = 'develop';
+			password = 'csq';
 		}
 		if(!tableNamePattern){
 			tableNamePattern = '';

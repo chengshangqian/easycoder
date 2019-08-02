@@ -11,8 +11,8 @@
 <meta http-equiv="Pragma" content="no-cache" />
 <meta http-equiv="Cache-Control" content="no-cache" />
 <meta http-equiv="Content-Type" content="text/html; charset=GBK" />
-<meta name="description" content="Easycode代码生成器是一个基于Struts2、Spring2、Ibatis2的高效开发框架的在线代码生成器" />
-<title>icoder代码生成器</title>
+<meta name="description" content="Easycoder代码生成器是一个基于Struts2、Spring2、Ibatis2的高效开发框架的在线代码生成器" />
+<title>Easycoder代码生成器</title>
 <link rel="stylesheet" type="text/css" href="/css/common.css" />
 <style type="text/css">
 	table#dataTable tr td.clicking{
@@ -39,7 +39,7 @@
 	<div id="container">
 		<div id="header">
 			<div id="header-nav">
-				<a href="/">首页</a> | <a href="/generatecode/index.ee" title="Struts2、Spring2、Ibatis2的高效开发框架的在线代码生成器">代码生成器</a> | <a href="/about.html">关于Easycode代码生成器</a> | <a href="/article/index.html">开发文档大全</a> | <a href="/changes.html">更新日志</a>
+				<a href="/">首页</a> | <a href="/generatecode/index.ee" title="Struts2、Spring2、Ibatis2的高效开发框架的在线代码生成器">代码生成器</a> | <a href="/article/index.html">开发文档大全</a> | <a href="/changes.html">更新日志</a> | <a href="/about.html">关于Easycoder</a>
 			</div>
 			<a href="http://chengshangqian.github.com" target="_blank" title="关于作者"><img src="/images/cocoa-logo.jpg" alt="成尚谦" /></a>
 		</div>
@@ -112,7 +112,7 @@
 		<!-- 底部版权区域 -->
 		<div id="footer">
 			<div id="footer-body">
-				<div id="copyright">Copyright &copy <a href="http://easycode.iteye.com/" target="_blank">ican.org</a>. All rights reserved. </div>
+				<div id="copyright">Copyright &copy <a href="http://chengshangqian.github.com" target="_blank">作者</a>. All rights reserved. </div>
 			</div>
 		</div>
 	</div>
