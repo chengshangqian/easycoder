@@ -1,0 +1,80 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"> 
+<html> 
+<head> 
+<title>Link Properties</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+<meta content="noindex, nofollow" name="robots"> 
+<script language="javascript"> 
+ 
+//Standard setup stuff (notice the command name used in the property names) 
+var oEditor = window.parent.InnerDialogLoaded() ; 
+var FCK = oEditor.FCK ; 
+var FCKLang = oEditor.FCKLang ; 
+var FCKInsertLink = oEditor.FCKInsertLink ; 
+ 
+window.onload = function () //Runs when the toolbar button is clicked and this page is loaded 
+{ 
+LoadSelected() ; //see function below 
+window.parent.SetOkButton( true ) ; // Show the "Ok" button. 
+} 
+ 
+//Get the currently selected element from the editor. Two Options follow. 
+ 
+//1. Use this form for some elements such as images 
+//var eSelected = oEditor.FCKSelection.GetSelectedElement() ; 
+ 
+//2. Use this form for elements with inner text (including the if statement) 
+var eSelected = FCK.Selection.MoveToAncestorNode( 'A' ) 
+if ( eSelected )  
+FCK.Selection.MoveToNode( eSelected ) ; 
+ 
+//If an anchor (A) object is currently selected, load the properties into the dialog 
+function LoadSelected() 
+{ 
+if ( !eSelected ) 
+return ; 
+ 
+txtHref.value = eSelected.href ;  
+txtCaption.value = eSelected.innerText ;  
+ 
+//following code would work with option 1 above. 
+// if ( eSelected.tagName == 'IMG' ) { 
+// -- code for setting dialog values -- } 
+// else 
+// eSelected == null ; //this will replace the current selection if not the right type 
+ 
+} 
+ 
+//Code that runs after the OK button is clicked 
+//If a link has been entered, pass the values to the Add() function in the fckplugin.js file. 
+function Ok() 
+{ 
+if ( document.getElementById('txtHref').value.length > 0 ) 
+FCKInsertLink.Add( txtHref.value, txtCaption.value ) ;  
+ 
+return true ; 
+} 
+</script>  
+</head> 
+ 
+<body scroll="no" style="OVERFLOW: hidden"> 
+<table height="100%" cellSpacing="0" cellPadding="0" width="100%" border="0"> 
+<tr> 
+<td> 
+<table cellSpacing="0" cellPadding="0" align="center" border="0"> 
+<tr> 
+<td> 
+输入音频,视频文件的地址<br> 
+<input id="txtHref" type="text"><br> 
+办理入音频,视频文件的标题<br> 
+<input id="txtCaption" type="text"> 
+</td> 
+</tr> 
+</table> 
+</td> 
+</tr> 
+</table> 
+</body> 
+</html> 
+ 
+<!-- End Code --> 

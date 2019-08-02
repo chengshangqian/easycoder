@@ -1,0 +1,53 @@
+﻿/* Initialization */
+html, body{ margin: 0; padding: 0; overflow: auto; overflow-x: hidden; font-family:"宋体","Times New Roman", Times, serif; /*scrollbar-arrow-color: #ffffff;
+scrollbar-highlight-color: #ffffff;
+scrollbar-3dlight-color: #5899B8;
+scrollbar-shadow-color: #ffffff;
+scrollbar-darkshadow-color: #5899B8;
+scrollbar-face-color: #7DB5D1;
+scrollbar-track-color: #DDF0F6;
+scrollbar-base-color: #0000ff;
+*/ }
+
+div{ text-align: left; font-size: 12px; line-height: 150%; color: #151515; }
+
+table,tr,td{ font-size: 12px; color: #3F3F3F; line-height: 150%; }
+
+td{ padding: 3px; }
+
+p{ text-indent: 2em; line-height: 150%; }
+
+form{ margin: 0; padding: 0; }
+
+img{ border: 0px; }
+
+input{ color: #151515; }
+
+textarea { border: 1px solid #7F9DB9; background:#fff;}
+
+.cursor { cursor: pointer; }
+
+em { color: #FF0000; font-style:normal;}
+
+
+/* link */
+a:link{ text-decoration: none;  color: #151515;}
+
+a:visited{ text-decoration: none;  color: #151515;}
+
+a:hover{ color: #ff0000; text-decoration: underline; }
+
+a:active{ text-decoration: none; }
+
+/* font_color */
+.font_red { display: block; color: #FFF; background-color: #F00; width: 40px; text-align: center; height: 16px; line-height: 18px; }
+
+.font_smalt { display: block; color: #FFF; background-color: #00F; width: 40px; text-align: center; height: 16px; line-height: 18px; }
+
+.font_green { display: block; color: #FFF; background-color: #390; width: 40px; text-align: center; height: 16px; line-height: 18px; }
+
+.font_orange { display: block; color: #FFF; background-color: #F60; width: 40px; text-align: center; height: 16px; line-height: 18px; }
+
+.font_blue { display: block; color: #FFF; background-color: #09c; width: 40px; text-align: center; height: 16px; line-height: 18px; }
+
+.font_gray { display: block; color: #FFF; background-color: #666; width: 40px; text-align: center; height: 16px; line-height: 18px; }

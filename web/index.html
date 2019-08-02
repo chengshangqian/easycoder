@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<title>成尚谦的工具箱：工欲善其事，必先利其器</title>
+<meta name="description" content="Vin's Development Home" />
+<link rel="stylesheet" type="text/css" href="/css/common.css" />
+<script type="text/javascript" src="/js/easycode/common/jquery/jquery.js"></script>
+<script type="text/javascript">
+$(function(){
+	initBuilding();
+});
+
+function initBuilding(){
+	$('.building').each(function(){
+		var el = $(this);
+		el.click(buildingHandler);
+	});
+}
+
+function buildingHandler(evt){
+	evt.preventDefault();
+	alert('building...');
+}
+</script>
+</head>
+
+<body>
+
+	<div id="container">
+
+		<div id="header">
+
+			<div id="header-nav">
+
+				<a href="/index.html">首页</a> | <a href="/generatecode/index.ee" title="Struts2、Spring2、Ibatis2的高效开发框架的在线代码生成器">代码生成器</a> | <a href="/article/index.html">开发文档大全</a> | <a href="/changes.html">更新日志</a>
+
+			</div>
+
+			<a href="http://easycode.iteye.com" title="About Vin"><img src="/images/cocoa-logo.jpg" alt="Cocoa" /></a>
+
+		</div>
+
+		<div id="main">
+			<h1>Welcome!</h1>
+			<ol>
+			<li><a href="/generatecode/index.ee" title="Struts2、Spring2、Ibatis2的高效开发框架的在线代码生成器"><span style="font-weight:700;font-size:14px;color:red;">代码生成器</span></a></li>
+			<li>
+				<a href="http://www.easycode.com" target="_blank">CAS单点登录整合示例</a><br />
+				需配置下面的host:<br />
+				172.16.165.85 sso.ican.org<br />
+				172.16.165.85 download.easycode.com<br />
+				172.16.165.85 www.easycode.com<br />
+				172.16.165.85 www.ican.com<br />
+				172.16.165.85 apple.ican.org<br />
+				172.16.165.85 banana.ican.org
+			</li>
+			<li><a href="/echarts-2.0.0-example.html">echarts-2.0.0</a></li>
+			<li><a href="/article/index.html">开发文档大全</a></li>
+			<li><a href="" class="building">工作日志</a></li>
+			</ol>
+
+			<div class="pageBottom"><a href="http://easycode.iteye.com/" target="_blank" title="关注Vin"><img src="/images/cocoa-logo.jpg" alt="Vin的微博" style="width:60px;height:15px;"></a> <span title="Top" onclick="window.scrollTo(0,0);"></span></div>
+
+		</div>
+
+		<div id="footer">
+
+			<div id="footer-body">
+				<div id="copyright">Copyright &copy <a href="http://easycode.iteye.com/" target="_blank">ican.org</a>. All rights reserved. </div>
+			</div>
+
+		</div>	
+		</div>
+
+</body>
+
+</html>

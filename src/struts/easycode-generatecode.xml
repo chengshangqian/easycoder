@@ -1,0 +1,48 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="org_ican_easycode_generatecode" extends="struts-default,struts-json"
+		namespace="/generatecode">
+		<action name="index" method="index"
+			class="org.ican.easycode.generator.web.index.actions.IndexAction">
+			<result name="success">
+				/jsp/easycode/generatecode/generatecode_index.jsp
+			</result>
+		</action>
+		
+		<action name="getMetaDataResult" method="getMetaDataResult"
+			class="org.ican.easycode.generator.web.index.actions.IndexAction">
+			<!-- 
+			<result name="success" type="json">
+				<param name="jsonModel">jsonModel</param>
+			</result>
+			 -->
+			<result name="success">
+				/jsp/easycode/generatecode/generatecode_tables.jsp
+			</result>			 
+		</action>
+		
+		<action name="generate" method="generate"
+			class="org.ican.easycode.generator.web.index.actions.IndexAction">
+			<result name="success" type="json">
+				<param name="jsonModel">jsonModel</param>
+			</result>
+		</action>
+		
+		<action name="download" method="download"
+			class="org.ican.easycode.generator.web.index.actions.IndexAction">
+			<result name="success" type="stream">
+				<param name="contentType">application/zip</param>
+				<param name="inputName">inputStream</param>
+				<param name="contentDisposition">attachment;filename="${resultMap.filename}"</param>
+				<param name="bufferSize">4096</param>
+			</result>
+		</action>
+		
+		<action name="downloadZipFile" method="downloadZipFile"
+			class="org.ican.easycode.generator.web.index.actions.IndexAction">
+		</action>
+	</package>
+	
+</struts>
